@@ -14,3 +14,37 @@
   color: #f5f5f5;
   position: relative;
 }
+
+#accommodations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #227BAB;
+  text-align: center;
+}
+
+.accommodations_card {
+  background-color: #2776a0;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.accommodations_card:hover {
+  transform: translateY(-5px);
+}
+
+.accommodations_card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.accommodations_card p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  color: #f5f5f5;
+}
