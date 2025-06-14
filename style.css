@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #227BAB;
+  margin: 0;
+  padding: 0;
+}
+
+/*Main Picrture*/
+
+@keyframes fade {
+  0% { opacity: 0.4; }
+  100% { opacity: 0.5; }
+}
+
+.image-container {
+  position: fixed; /* Keep fixed if you want it to stay on screen */
+  top: 0; /* Make sure to pin to top */
+  left: 0; /* Pin to left */
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  z-index: -1; /* Keep behind content */
+}
+
+.responsive-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: 0; /* Set to 0 so it stays inside container but behind curve */
+  animation: fade 2s ease-in;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#curve {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  z-index: 1;
+  background: #227BAB;
+  top: 85%;
+  border-radius: 100% 100% 0 0;
+}
+
+/* Main navigation bar */
+#Navigation {
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styles */
+#Logo {
+  font-family: "Gluten";
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 0 20px;
+}
+
+#Logo img {
+  height: 60px;
+  margin-right: 10px;
+}
+
+#Logo div {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+/* Navigation buttons */
+#Navigation_btns {
+  gap: 30px;
+  margin-right: 10px;
+}
+
+.Nav_btn {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  cursor: pointer;
+  padding: 25px;
+}
+
+.Nav_btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+#MenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+#MenuToggle_btns{
+  display: none;
+  overflow: hidden;
+  opacity: .9;
+  flex-direction: column;
+  align-items: center;      /* centers buttons horizontally */
+  background-color: #196188;
+  margin-top: 10px;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Menu_btn{
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  opacity: inherit;
+}
+
+.Menu_btn:hover{
+  opacity: 1;
+  background-color: #1a5c80;
+}
+
+/* welcome page */
+#welcome_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-weight: 700px;
+  color: #f5f5f5;
+  margin: 80px 0 0 0;
+  position: relative;
+  flex-direction: column;
+}
+
+#welcome_text h1{
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+#welcome_text h2{
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+#welcome_text p{
+  font-size: .8rem;
+  font-weight: 300px;
+  text-align: center;
+  margin: 1;
+  max-width: 40%;
+}

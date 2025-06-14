@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yolly Beach</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="midea.css">
+</head>
+<body>
+
+  <div class="image-container">
+    <img  id="slideshow-image" src="Pictures/Main_Picture.jpg" alt="Main Picture" class="responsive-image">
+    <div id="curve"></div>
+
+    <div id="welcome_text">
+  <h1>WELCOME TO THE</h1>
+  <h2>YOLLY BEACH</h2>
+  <p>
+  We're a family-owned beach resort located in Sitio Cot-cot, Brgy. Lanca, 8200 Mati, Philippines.
+  We offer comfortable accommodations so you can relax and enjoy our stunning white sand beach.
+  Our resort is still undergoing development as we continue to expand and improve the area to
+  make your experience even more enjoyable.
+</p>
+</div>
+  </div>
+
+  <nav id="Navigation">
+
+    <div id="Logo">
+      <img src="Icons/palm-White.png" alt="Yolly_Icon">
+      <div>YOLLY BEACH RESORT</div>
+    </div>
+
+    <button id="MenuToggle" onclick="toggleMenu()">&#9776;</button>
+
+    <div id="Navigation_btns">
+        <button class="Nav_btn">HOME</button>
+        <button class="Nav_btn">SERVICE</button>
+        <button class="Nav_btn">ROOMS</button>
+        <button class="Nav_btn">BOOKING</button>
+        <button class="Nav_btn">CONTACT</button>
+    </div>
+  </nav>
+
+  <div id="MenuToggle_btns">
+    <button class="Menu_btn">HOME</button>
+    <button class="Menu_btn">SERVICE</button>
+    <button class="Menu_btn">ROOMS</button>
+    <button class="Menu_btn">BOOKING</button>
+    <button class="Menu_btn">CONTACT</button>
+  </div>
+
+</body>
+</html>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("MenuToggle_btns");
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+  }
+
+  window.addEventListener("resize", function () {
+    const menu = document.getElementById("MenuToggle_btns");
+    if (window.innerWidth >= 820) {
+      menu.classList.remove("active");
+      menu.style.display = "none";
+    }
+  });
+
+  const images = [
+  'Pictures/Main_Picture.jpg',
+  'Pictures/Main_Picture2.jpg',
+  'Pictures/Main_Picture3.jpg',
+  // add as many as you want
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById('slideshow-image');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    
+    imgElement.classList.remove('responsive-image');
+    void imgElement.offsetWidth;
+    imgElement.classList.add('responsive-image');
+
+    imgElement.src = images[currentIndex];
+  }, 5000);
+
+</script>
