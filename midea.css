@@ -68,6 +68,22 @@
   }
 
   #service h1{
-  font-size: 1rem;
+    font-size: 1rem;
+  }
+
+  .room_card h1{
+    font-size: 1.5rem;
+  }
+
+.room_card h2{
+  font-size: .8rem;
 }
+
+.room_card ul {
+  font-size: .6rem;
+}
+
+  .image_container img {
+    height: 25vh;
+  }
 }
