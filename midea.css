@@ -66,4 +66,8 @@
     font-size: .6rem;
     max-width: 60%;
   }
+
+  #service h1{
+  font-size: 1rem;
+}
 }
