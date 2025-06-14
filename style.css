@@ -54,6 +54,8 @@ body::-webkit-scrollbar {
 /* Main navigation bar */
 #Navigation {
   position: relative;
+  top: 0;
+  z-index: 999;
   height: 120px;
   display: flex;
   align-items: center;

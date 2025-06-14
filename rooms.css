@@ -1,0 +1,107 @@
+#rooms {
+  z-index: 1;
+  position: relative;
+  margin-top: 50px;
+}
+
+#rooms h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  position: relative;
+  margin-bottom: 4px; /* reduced spacing */
+}
+#rooms_divS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #227BAB;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.room_card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 10px 10px 10px;
+  background: #2c78a1;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Ubuntu, sans-serif;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room_card h1,
+.room_card h2,
+.room_card img {
+  text-align: center;
+  padding: none;
+}
+
+.room_card h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 3rem;
+  color: #f5f5f5;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.room_card h2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #f5f5f5;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+.room_card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: none;
+}
+
+.room_card li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.room_card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.image_container {
+  display: flex;
+  overflow-x: auto; /* allow horizontal scrolling */
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.image_container img {
+  flex: 0 0 auto;
+  width: auto;
+  height: 35vh;
+  border-radius: 10px;
+}
