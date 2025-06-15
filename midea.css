@@ -75,14 +75,23 @@
     font-size: 1.5rem;
   }
 
-.room_card h2{
-  font-size: .8rem;
-}
+  .room_card h2{
+    font-size: .8rem;
+  }
 
-.room_card ul {
-  font-size: .6rem;
-}
+  .room_card ul {
+    font-size: .6rem;
+  }
   .image_container img {
     height: 25vh;
+  }
+
+  .accommodations_card p{
+    font-size: .6rem;
+  }
+
+  .accommodations_card img{
+    width: 60px;
+    font-size: .6rem;
   }
 }
