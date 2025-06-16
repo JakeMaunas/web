@@ -91,7 +91,7 @@
   .image_container img {
     height: 20vh;
   }
-  
+
   .accommodations_card p{
     font-size: .6rem;
   }
@@ -109,4 +109,10 @@
     margin-left: 0 !important;
     text-align: center;
   }
+
+  #map-container {
+    width: 300px;
+    height: 200px;
+  }
+
 }
