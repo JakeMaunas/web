@@ -21,7 +21,7 @@
   text-align: center;
   font-family: "Ubuntu";
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 1rem;
   color: #f5f5f5;
   margin-bottom: 4px;
 }
@@ -32,8 +32,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;       /* ← Add this to enable wrapping */
-  align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -42,7 +41,7 @@
 #amenities_card h1 {
   font-family: "Ubuntu";
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #f5f5f5;
   text-align: center;
   margin-bottom: 4px;
@@ -97,4 +96,55 @@
   list-style: none;
   width: 100%;
   text-align: center;
+}
+
+
+.amenities_img2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.amenities_img2 div {
+  width: auto;
+  border-radius: 5px;
+  padding: 6px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.amenities_img2 div img {
+  width: auto;
+  height: 35vh;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+@media (max-width: 820px){
+  #amenities h1 {
+    font-size: 1rem;
+  }
+
+  #amenities p {
+    font-size: .8rem;
+  }
+
+  #amenities_card h1 {
+    font-size: 1.1rem;
+  }
+
+  #amenities_img1 div img {
+    height: 40vh;
+  }
+
+  #CR{
+    font-size: .9rem;
+  }
+
+  .amenities_img2 div img {
+    height: 25vh;
+  }
 }
