@@ -127,6 +127,14 @@
   height: fit-content;
 }
 
+#footer_a{
+  font-size: .9rem;
+  margin-top: 5px;
+  color: #000000;
+  max-width: 20%;
+  text-align: center;
+}
+
 @media (max-width: 820px){
   #map-container {
     width: 350px;
@@ -153,8 +161,11 @@
   #book_card{
     padding: 0px 0px;
   }
-}
 
+  #footer_a{
+    max-width: 30%;
+  }
+}
 
 #site-footer{
   width: 100%;
