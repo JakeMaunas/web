@@ -109,6 +109,7 @@ body {
   cursor: pointer;
   position: fixed;
   right: 20px;
+  top: 20px;
 }
 
 #MenuToggle_btns{
