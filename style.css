@@ -110,6 +110,7 @@ body {
   position: fixed;
   right: 10px;
   top: 20px;
+  padding: 0;
 }
 
 #MenuToggle_btns{
