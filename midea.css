@@ -94,4 +94,9 @@
     width: 60px;
     font-size: .6rem;
   }
+
+  #contact_details div p iframe{
+    height: 200;
+    width: 400;
+  }
 }
