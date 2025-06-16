@@ -38,20 +38,20 @@
       <button id="MenuToggle" onclick="toggleMenu()">&#9776;</button>
 
       <div id="Navigation_btns">
-          <button class="Nav_btn">HOME</button>
-          <button class="Nav_btn">PRICING</button>
-          <button class="Nav_btn">ROOMS</button>
-          <button class="Nav_btn">AMENITIES</button>
-          <button class="Nav_btn">BOOKING / CONTACT</button>
+          <button class="Nav_btn" onclick="scrollToSection('#Navigation')">HOME</button>
+          <button class="Nav_btn" onclick="scrollToSection('#pricing')">PRICING</button>
+          <button class="Nav_btn" onclick="scrollToSection('#rooms')">ROOMS</button>
+          <button class="Nav_btn" onclick="scrollToSection('#amenities')">AMENITIES</button>
+          <button class="Nav_btn" onclick="scrollToSection('#book_card')">BOOKING / CONTACT</button>
       </div>
     </nav>
 
   <div id="MenuToggle_btns">
-    <button class="Menu_btn">HOME</button>
-    <button class="Menu_btn">PRICING</button>
-    <button class="Menu_btn">ROOMS</button>
-    <button class="Menu_btn">AMENITIES</button>
-    <button class="Menu_btn">BOOKING / CONTACT</button>
+    <button class="Menu_btn" onclick="navigateTo('#Navigation')">HOME</button>
+    <button class="Menu_btn" onclick="navigateTo('#pricing')">PRICING</button>
+    <button class="Menu_btn" onclick="navigateTo('#rooms')">ROOMS</button>
+    <button class="Menu_btn" onclick="navigateTo('#amenities')">AMENITIES</button>
+    <button class="Menu_btn" onclick="navigateTo('#book_card')">BOOKING / CONTACT</button>
   </div>
 
   <div id="pricing">
@@ -339,5 +339,14 @@
 
     imgElement.src = images[currentIndex];
   }, 5000);
+
+  function scrollToSection(targetId) {
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function navigateTo(targetId) {
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('MenuToggle_btns').style.display = 'none';
+  }
 
 </script>

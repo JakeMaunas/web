@@ -107,6 +107,8 @@ body {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+  position: fixed;
+  right: 20px;
 }
 
 #MenuToggle_btns{
