@@ -153,4 +153,12 @@
     text-align: center;
     margin: 0 10px;
   }
+
+  #contact_details {
+    padding: 5px 15px;
+  }
+
+  #book_card{
+    padding: 0px 0px;
+  }
 }
