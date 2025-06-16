@@ -5,15 +5,10 @@ body {
   background-color: #227BAB;
   margin: 0;
   padding: 0;
-  overflow: auto;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+  overflow-x: hidden;
 }
 
 /*Main Picrture*/
-
 @keyframes fade {
   0% { opacity: 0.4; }
   100% { opacity: 0.5; }
