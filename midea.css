@@ -95,8 +95,13 @@
     font-size: .6rem;
   }
 
-  #contact_details div p iframe{
-    height: 200;
-    width: 400;
+  #contact_details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact_details > div {
+    margin-left: 0 !important;
+    text-align: center;
   }
 }
