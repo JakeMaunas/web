@@ -31,9 +31,9 @@
 .room_card {
   width: 100%;
   max-width: 100%;
-  margin: 0 10px 10px 10px;
+  margin: 10px 0;
   background: #2c78a1;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: Ubuntu, sans-serif;
@@ -98,7 +98,6 @@
   display: flex;
   overflow-x: auto;
   gap: 10px;
-  padding-left: 10px;
   max-width: 100%;
   scroll-behavior: smooth;
 }

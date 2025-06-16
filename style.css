@@ -5,10 +5,9 @@ body {
   background-color: #227BAB;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: auto;
   width: 100%;
 }
-
 /*Main Picrture*/
 @keyframes fade {
   0% { opacity: 0.4; }
