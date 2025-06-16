@@ -137,8 +137,8 @@
 
 @media (max-width: 820px){
   #map-container {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
 
   #rules > div{
@@ -151,5 +151,6 @@
   #contact_details > div {
     margin-left: 0 !important;
     text-align: center;
+    margin: 0 100px;
   }
 }
