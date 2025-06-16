@@ -73,9 +73,9 @@
 }
 
 #amenities_img1 div ul {
-  font-family: "Ubuntu";
+  font-family: Caveat;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: black;
   padding: 0;
   margin-top: 20px;
@@ -137,7 +137,7 @@
   }
 
   #amenities_img1 div img {
-    height: 40vh;
+    height: 37vh;
   }
 
   #CR{
