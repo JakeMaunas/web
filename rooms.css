@@ -1,6 +1,7 @@
 #rooms {
   z-index: 1;
   position: relative;
+  margin-top: 50px;
 }
 
 #rooms h1 {
@@ -107,4 +108,29 @@
   width: auto;
   height: 30vh;
   border-radius: 10px;
+}
+
+.Rooms_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.Rooms_img div {
+  width: auto;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: #f5f5f5;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.Rooms_img div img {
+  width: auto;
+  height: 30vh;
+  border-radius: 5px;
+  margin: 0;
+  object-fit: cover;
 }

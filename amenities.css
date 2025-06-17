@@ -1,5 +1,5 @@
 #amenities {
-  margin-top: 80px;
+  margin-top: 150px;
   z-index: 1;
   position: relative;
 }
@@ -98,7 +98,6 @@
   text-align: center;
 }
 
-
 .amenities_img2 {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +120,7 @@
   height: 35vh;
   border-radius: 6px;
   object-fit: cover;
+  margin: 0;
 }
 
 @media (max-width: 820px){
