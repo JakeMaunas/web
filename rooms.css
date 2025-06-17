@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 #rooms {
   z-index: 1;
   position: relative;
@@ -21,7 +23,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #227BAB;
-  min-height: 100vh;
   width: 100%;
   gap: 40px;
   box-sizing: border-box;
@@ -55,7 +56,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "Ubuntu";
+  font-family: Caveat;
   font-weight: 700;
   font-size: 2rem;
   color: #f5f5f5;
@@ -74,6 +75,7 @@
   color: #f5f5f5;
   position: relative;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 .room_card ul {
