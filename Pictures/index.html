@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yolly Beach</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pricing.css">
+  <link rel="stylesheet" href="rooms.css">
+  <link rel="stylesheet" href="midea.css">
+  <link rel="stylesheet" href="amenities.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+  <div class="image-container">
+    <img  id="slideshow-image" src="Pictures/b1.jpg" alt="Main Picture" class="responsive-image">
+    <div id="curve"></div>
+
+    <div id="welcome_text">
+      <h1>WELCOME TO THE</h1>
+      <h2>YOLLY BEACH</h2>
+      <p>
+        We're a family-owned beach resort located in Sitio Cot-cot, Brgy. Lanca, 8200 Mati, Philippines.
+        We offer comfortable accommodations so you can relax and enjoy our stunning white sand beach.
+        Our resort is still undergoing development as we continue to expand and improve the area to
+        make your experience even more enjoyable.
+      </p>
+    </div>
+  </div>
+  <nav id="Navigation">
+
+      <div id="Logo">
+        <img src="Icons/palm-White.png" alt="Yolly_Icon">
+        <div>YOLLY BEACH RESORT</div>
+      </div>
+
+      <button id="MenuToggle" onclick="toggleMenu()">&#9776;</button>
+
+      <div id="Navigation_btns">
+          <button class="Nav_btn" onclick="scrollToSection('#Navigation')">HOME</button>
+          <button class="Nav_btn" onclick="scrollToSection('#pricing')">PRICING</button>
+          <button class="Nav_btn" onclick="scrollToSection('#rooms')">ROOMS</button>
+          <button class="Nav_btn" onclick="scrollToSection('#amenities')">AMENITIES</button>
+          <button class="Nav_btn" onclick="scrollToSection('#book_card')">BOOKING / CONTACT</button>
+      </div>
+    </nav>
+
+  <div id="MenuToggle_btns">
+    <button class="Menu_btn" onclick="navigateTo('#Navigation')">HOME</button>
+    <button class="Menu_btn" onclick="navigateTo('#pricing')">PRICING</button>
+    <button class="Menu_btn" onclick="navigateTo('#rooms')">ROOMS</button>
+    <button class="Menu_btn" onclick="navigateTo('#amenities')">AMENITIES</button>
+    <button class="Menu_btn" onclick="navigateTo('#book_card')">BOOKING / CONTACT</button>
+  </div>
+
+  <div id="pricing">
+    <h1>PRICING</h1>
+  </div>
+
+  <div id="accommodations">
+    <div class="accommodations_card">
+      <img src="Icons/children.png" alt="Child_Price">
+      <p>Below 8 years old free</p>
+    </div>
+
+    <div class="accommodations_card">
+      <img src="Icons/couple.png" alt="Adult_Price">
+      <p>Entrance fee PHP 30 per person</p>
+    </div>
+
+    <div class="accommodations_card">
+      <img src="Icons/camping.png" alt="Ground_Price">
+      <p>Ground rental fee PHP 75 per tent</p>
+    </div>
+  </div>
+
+  <div id="rooms">
+    <h1>ROOMS</h1>
+  </div>
+
+  <div id="rooms_divS">
+    <div class="room_card">
+      <h1>REST HOUSE</h1>
+      <h2>PHP 2500 PER NIGHT</h2>
+      <ul>
+        <li>Max of 8 Guests. Free entrance, additional PHP 75 per extra person.</li>
+        <li>Floor mattress. Additional foam mattresses provided upon request.</li>
+        <li>Enjoy the best balcony view.</li>
+        <li>Dining area available on the ground floor.</li>
+        <li>Common comfort room.</li>
+      </ul>
+
+      <div class="image_container">
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/b1.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/rh2.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/rh3.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/rh4.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="room_card">
+      <h1>ROOM WITH A/C (Room 1&2)</h1>
+      <h2>PHP 3000 PER NIGHT</h2>
+      <ul>
+        <li>Max of 12 Guests. Free entrance, additional PHP 75 per extra person.</li>
+        <li>Comes with private comfort room</li>
+        <li>Comes with double size bed and bunk bed (Extra foam matressprovided if requested)</li>
+      </ul>
+
+      <div class="image_container">
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/r1.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/r2.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/r3.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/r4.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="room_card">
+      <h1>ROOM WITH A/C</h1>
+      <h2>PHP 4000 PER NIGHT</h2>
+      <ul>
+        <li>Max of 10 Guests. Free entrance, additional PHP 75 per extra person.</li>
+        <li>Comes with private comfort room and kitchen</li>
+        <li>Comes with quenn size bed and sofa bed (Extra foam matressprovided if requested)</li>
+      </ul>
+
+      <div class="image_container">
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/ra1.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/ra2.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/ra3.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/ra4.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/ra5.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="rooms">
+    <h1>COTTAGES</h1>
+  </div>
+
+  <div id="rooms_divS">
+    <div class="room_card">
+      <h1>OPEN COTTAGE (4 available)</h1>
+        <h2>PHP 300 - Day tour</h2>
+        <h2>PHP 800 - Overnight</h2>
+        <ul>
+          <li>Max of 15 Guests</li>
+          <li>Perfect for guests that wanted to camp outside</li>
+          <li>Bring your own tent. Additional charges for ground rentals for tent placement</li>
+          <li>7am Check in 5PM Check out for daytour</li>
+          <li>1pm Check in 12NN Check out for overnight</li>
+        </ul>
+
+      <div class="image_container">
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/c1.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/c2.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/c3.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/c4.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="room_card">
+      <h1>TABLES</h1>
+        <h2>PHP 150 - Day tour</h2>
+        <h2>PHP 300 - Overnight</h2>
+        <ul>
+          <li>Day tour and overnight available</li>
+          <li>Overnight available, bring your own tent. Additional charges for ground rentals for tent placement</li>
+          <li>Bench and tables</li>
+          <li>7am Check in 5PM Check out for daytour</li>
+          <li>1pm Check in 12NN Check out for overnight</li>
+        </ul>
+
+      <div class="image_container">
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/sample1.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/sample2.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/sample3.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+        <div class="Rooms_img">
+          <div>
+            <img src="Pictures/sample4.jpg" alt="Dirty Ktchen">
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <div id="amenities">
+    <h1>AMENITIES</h1>
+    <p>Ameneties we offer in Yolly Beach</p>
+  </div>
+
+  <div id="amenities_card">
+    <h1>DIRTY KITCHEN</h1>
+    <div id="amenities_img1">
+      <div>
+        <img src="Pictures/sample1.jpg" alt="Dirty Kitchen">
+        <ul>
+          <li>Available for all guests.</li>
+          <li>We sell fresh fish.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="amenities_card">
+    <h1 style="margin-bottom: none;">COMFORT ROOM</h1>
+    <ul id="CR">
+      <li>Shower and toilets</li>
+      <li>Avalable for everyone</li>
+    </ul>
+
+    <div class="amenities_img2">
+      <div>
+        <img src="Pictures/sample1.jpg" alt="Dirty Ktchen">
+      </div>
+    </div>
+
+    <div class="amenities_img2">
+      <div>
+        <img src="Pictures/sample1.jpg" alt="Dirty Ktchen">
+      </div>
+    </div>
+
+    <div class="amenities_img2">
+      <div>
+        <img src="Pictures/sample1.jpg" alt="Dirty Ktchen">
+      </div>
+    </div>
+
+    <div class="amenities_img2">
+      <div>
+        <img src="Pictures/sample1.jpg" alt="Dirty Ktchen">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="book_card">
+    <div id="booking">
+      <h1>BOOKING</h1>
+    </div>
+
+    <h1 id="headers_contact">Contact and payment info</h1>
+    <div class="dash-line" style="margin: 20px 40px;"></div>
+
+    <div id="contact_details">
+      <div class="details_yolly">
+        <p style="font-size: .8rem; margin-bottom: 10px; margin-top: 0; ">Contact our Facebook page and send a message to make a reservation.</p>
+        <p style="font-weight: 700; font-size: .8rem; margin: 0;">50% Down payment required to confirm your booking through Palawan and RD Pawnshop Receiver info will be given through the page.</p>
+      </div>
+
+      <div class="details_yolly">
+        <h1 style="font-size: 1rem; ">Contact:</h1>
+        <a href="tel:+639631825052" style="margin: 0; font-size: .9rem;">+63 963 316 8453</a>
+        <h1 style="font-size: 1.1rem; font-size: 1rem;">Location</h1>
+        <a href="https://www.google.com/maps/place/Yolly+Beach+Resort/@6.3388208,126.1991015,19.98z/data=!4m6!3m5!1s0x32fa0b1bdce5dc05:0xa82030952389ee0e!8m2!3d6.3389382!4d126.1989517!16s%2Fg%2F11qmmdbpnt?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" 
+        target="_blank" style="font-size: .9rem;"> Sitio Cot-cot, Brngy. Lanca 8200 Mati, Philippines</a>
+      </div>
+
+      <div class="details_yolly" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1 style="font-size: 1.2rem; margin-bottom: 10px; margin-top: 0;">BOOK NOW</h1>
+        <a href="https://www.facebook.com/profile.php?id=100063563602062" target="_blank">
+          <img src="Icons/facebook.png" alt="facebook" id="facebook">
+        </a>
+      </div>
+      
+      <div class="dash-line2"></div>
+
+      <div id="rules">
+        <div>
+          <h1 style="font-size: 1.4rem;">RULES</h1>
+          <ul style="font-family: Ubuntu; font-size: .9rem;">
+            <li style="margin-top: 5px;">No pets allowed</li>
+            <li style="margin-top: 5px;">No walk-ins as of the moment to avoid accommodation conflict.</li>
+            <li style="margin-top: 5px;">For Day tour guests please book ahead through the Facebook page.</li>
+            <li style="margin-top: 5px;">We do not charge for service fee and cleaning fee, so we kindly ask to properly dispose your garbage's.</li>
+            <li style="margin-top: 5px;">Any bookings will only be made through the Facebook page.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="map-container">
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d495.6782592829158!2d126.1991015!3d6.3388208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fa0b1bdce5dc05%3A0xa82030952389ee0e!2sYolly%20Beach%20Resort!5e0!3m2!1sen!2sph!4v1750045520094!5m2!1sen!2sph" 
+            width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </p>
+      </div>
+      <div class="dash-line2"></div>
+
+    </div>
+  </div>
+
+  <footer id="site-footer">
+    <h1 style="margin: 0; font-size: 1rem; font-family: Caveat; font-weight: 700;">Book Now</h1>
+    <p style="margin: 0; font-size: .9rem;">Yolly Beach Resort</p>
+
+    <a href="https://www.facebook.com/profile.php?id=100063563602062" target="_blank">
+      <img src="Icons/facebook.png" alt="facebook" id="facebook" style="height: 4vh; width: auto; margin-top: 20px; margin-bottom: 7px;">
+    </a>
+
+    <p style="margin: 0; font-family: Caveat; font-weight: 700; font-size: 1.1rem;">find us</p>
+    <a href="https://www.google.com/maps/place/Yolly+Beach+Resort/@6.3388208,126.1991015,19.98z/data=!4m6!3m5!1s0x32fa0b1bdce5dc05:0xa82030952389ee0e!8m2!3d6.3389382!4d126.1989517!16s%2Fg%2F11qmmdbpnt?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D" 
+        target="_blank" id="footer_a"> 
+    Sitio Cot-cot, Brngy. Lanca 8200 Mati, Philippines
+    </a>
+  </footer>
+</body>
+</html>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("MenuToggle_btns");
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+  }
+
+  window.addEventListener("resize", function () {
+    const menu = document.getElementById("MenuToggle_btns");
+    if (window.innerWidth >= 820) {
+      menu.classList.remove("active");
+      menu.style.display = "none";
+    }
+  });
+
+  const images = [
+  'Pictures/b1.jpg',
+  'Pictures/b2.jpg',
+  'Pictures/b3.jpg',
+  'Pictures/b4.jpg',
+  // add as many as you want
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById('slideshow-image');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    
+    imgElement.classList.remove('responsive-image');
+    void imgElement.offsetWidth;
+    imgElement.classList.add('responsive-image');
+
+    imgElement.src = images[currentIndex];
+  }, 5000);
+
+  function scrollToSection(targetId) {
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function navigateTo(targetId) {
+    document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('MenuToggle_btns').style.display = 'none';
+  }
+
+</script>
