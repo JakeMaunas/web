@@ -20,12 +20,12 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 40px 20px;
-  background-color: #637A9F;
+  background-color: #23689B;
   text-align: center;
 }
 
 .accommodations_card {
-  background-color: #566c8f;
+  background-color: #205e8d;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
