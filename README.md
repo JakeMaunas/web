@@ -9,3 +9,5 @@ The enquiry form prepares a message for the visitor to send by SMS or copy to Fa
 Enhanced photos are in `assets/`. Original resort photos remain in `Pictures/`; uploaded room photos are preserved as siblings in `assets/`. Exact ImageGen prompts and source provenance are recorded in `docs/photo-edits.json`. AI retouching cleans clutter and lighting while retaining the original property.
 
 Mobbin references could not be retrieved because its MCP requires a paid plan. This is an original design based on the property and the user's brief.
+
+Motion lives in motion.css and motion.js. Nineteen additional photos were enhanced, so all 25 unique property photos used by the page and galleries now reference edited siblings. Exact prompts and original sources remain in docs/photo-edits.json. The gallery no longer repeats the original Room 3 sleeping-area photo after its enhanced version. To use a different preview port in PowerShell: `$env:PORT=4175; node preview.cjs`.

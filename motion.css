@@ -1,0 +1,85 @@
+/* Calm motion: one-time photo reveals and brief, interruptible UI feedback. */
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --motion-press: 140ms;
+  --motion-ui: 220ms;
+  --motion-reveal: 600ms;
+}
+html { scrollbar-gutter: stable; }
+
+.hero-content { animation: hero-arrive var(--motion-reveal) var(--ease-out); }
+@keyframes hero-arrive {
+  from { opacity: .6; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.button, .filter, .gallery-arrow, .gallery-top > button, .copy-button {
+  transition: transform var(--motion-press) var(--ease-out), background-color 160ms ease, color 160ms ease;
+}
+html[data-input="pointer"] :is(.button, .filter, .gallery-arrow, .gallery-top > button, .copy-button):active:not(:disabled) {
+  transform: scale(.98);
+}
+.button .icon, .text-link .icon { transition: transform 180ms var(--ease-out); }
+.image-button > img, .room-photo > img { transition: transform var(--motion-ui) var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .button:hover .icon, .text-link:hover .icon { transform: translateX(3px); }
+  .image-button:hover > img { transform: scale(1.015); }
+}
+
+img.reveal-media {
+  clip-path: inset(0);
+  opacity: 1;
+  transition: clip-path var(--motion-reveal) var(--ease-in-out), opacity 450ms var(--ease-out), transform var(--motion-ui) var(--ease-out);
+}
+.reveal-media[data-reveal="pending"] { clip-path: inset(0 0 10% 0); opacity: .6; }
+
+.menu-toggle span { transition: transform 180ms var(--ease-out); }
+@media (max-width: 800px) {
+  .mobile-menu {
+    opacity: 0;
+    transform: translateY(-8px);
+    transform-origin: top right;
+    transition: opacity 180ms var(--ease-out), transform 180ms var(--ease-out), display 180ms allow-discrete;
+  }
+  .mobile-menu:not([hidden]) { opacity: 1; transform: translateY(0); }
+  @starting-style {
+    .mobile-menu:not([hidden])[data-motion="animated"] { opacity: 0; transform: translateY(-8px); }
+  }
+}
+.mobile-menu[data-motion="instant"], .menu-toggle[data-motion="instant"] span { transition: none; }
+
+.gallery {
+  opacity: 0;
+  transform: translateY(6px) scale(.98);
+  transform-origin: center;
+  transition: opacity var(--motion-ui) var(--ease-out), transform var(--motion-ui) var(--ease-out), display var(--motion-ui) allow-discrete, overlay var(--motion-ui) allow-discrete;
+}
+.gallery[open] { opacity: 1; transform: translateY(0) scale(1); }
+.gallery::backdrop {
+  opacity: 0;
+  transition: opacity var(--motion-ui) var(--ease-out), display var(--motion-ui) allow-discrete, overlay var(--motion-ui) allow-discrete;
+}
+.gallery[open]::backdrop { opacity: 1; }
+@starting-style {
+  .gallery[open][data-motion="animated"] { opacity: 0; transform: translateY(6px) scale(.98); }
+  .gallery[open][data-motion="animated"]::backdrop { opacity: 0; }
+}
+.gallery[data-motion="instant"], .gallery[data-motion="instant"]::backdrop { transition: none; }
+.faq-list summary .icon { transition: transform 160ms var(--ease-out); }
+html[data-input="keyboard"] .faq-list summary .icon { transition: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-content { animation: none; }
+  .reveal-media, .reveal-media[data-reveal="pending"] { opacity: 1; clip-path: none; transition: none; }
+  .gallery, .gallery[open], .mobile-menu, .mobile-menu:not([hidden]) { transform: none; transition: none; }
+  .gallery::backdrop, .menu-toggle span, .faq-list summary .icon { transition: none; }
+  .button, .filter, .gallery-arrow, .gallery-top > button, .copy-button { transition: background-color 100ms ease, color 100ms ease; }
+  .button .icon, .text-link .icon, .image-button > img, .room-photo > img { transition: none; }
+  html[data-input="pointer"] :is(.button, .filter, .gallery-arrow, .gallery-top > button, .copy-button):active:not(:disabled),
+  .button:hover .icon, .text-link:hover .icon, .image-button:hover > img, .room-photo:hover > img { transform: none; }
+}
+@media print {
+  .reveal-media, .reveal-media[data-reveal="pending"] { opacity: 1; clip-path: none; }
+}

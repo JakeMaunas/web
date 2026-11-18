@@ -104,7 +104,7 @@ Palm greens and warm paper form the core palette; pale sage separates accommodat
 
 **Display:** Gelasio with Georgia and serif fallbacks. **Body and controls:** DM Sans with Arial and sans-serif fallbacks. Headings are regular weight, with balanced wrapping and occasional italic emphasis. The normative base styles are in the frontmatter.
 
-The phone hero uses a smaller fluid size (`clamp(49px,12.7vw,68px)`) and more open line height (1.1). Section headings have phone overrides around 36–40px. Descriptions commonly use 14–15px; paragraphs have a maximum measure (66ch). Room features use readable small text (12px), including on phones. Price numerals use tabular figures where comparisons benefit. Phone inputs use a readable size (16px).
+The phone hero uses a smaller fluid size (`clamp(49px,12.7vw,68px)`) and more open line height (1.1). Section headings have phone overrides around 36â€“40px. Descriptions commonly use 14â€“15px; paragraphs have a maximum measure (66ch). Room features use readable small text (12px), including on phones. Price numerals use tabular figures where comparisons benefit. Phone inputs use a readable size (16px).
 
 ## Layout
 
@@ -128,7 +128,7 @@ Primary buttons use palm fill, sand text and a darker hover. Cream buttons rever
 
 ### Accommodation and filters
 
-Large photographs lead into serif room titles, prices and compact feature rows. A sand photo-count badge sits on the image. Active filter pills use palm fill and sand text; inactive pills are outlined. Hover-capable devices gently enlarge room photos (1.025 scale over .45s).
+Large photographs lead into serif room titles, prices and compact feature rows. A sand photo-count badge sits on the image. Active filter pills use palm fill and sand text; inactive pills are outlined. Fine-pointer, hover-capable devices gently enlarge room photos (1.025 scale over 220ms).
 
 ### Enquiry fields
 
@@ -138,7 +138,11 @@ Fields sit on the green section with a lighter green fill (`#244c40`), subdued b
 
 Desktop navigation is a quiet text row. The compact menu button changes to a cross when expanded; its menu opens beneath the header. Native FAQ rows use thin dividers and a plus that rotates when open. The photo dialog includes previous/next controls and a caption/count row; phone arrows overlay the image. Preserve keyboard navigation, restored focus and disabled arrow states.
 
-Hero copy arrives with upward movement and blur settling (.8s); button colors transition over .2s. Reduced-motion preferences disable animation, transitions and smooth scrolling.
+Hero copy arrives with a small upward fade (600ms), followed by one-time reveals of below-the-fold photographs. UI feedback uses 140–220ms transitions. Reduced-motion preferences remove movement and smooth scrolling while retaining brief color feedback.
+
+### Motion
+
+Motion is defined in motion.css and motion.js: 140ms press feedback, 180â€“220ms menu/gallery and image state transitions, and 600ms one-time photograph reveals. Use the shared strong ease-out cubic-bezier(0.23,1,0.32,1) and movement ease-in-out cubic-bezier(0.77,0,0.175,1). Text and rates remain stationary. Keyboard-opened controls are immediate. Reduced motion removes movement while preserving brief color feedback. Hover transforms require both hover support and a fine pointer. The photo galleries use enhanced sibling assets; originals remain available.
 
 ## Do's and Don'ts
 

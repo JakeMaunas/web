@@ -42,6 +42,139 @@
       "output": "assets/room-3.jpg",
       "tool": "built-in image_gen",
       "prompt": "Use-case: edit existing property photo. Edit target: the supplied Room 3 photo only. Enhance this exact simple beach resort sleeping area for a website listing. Preserve all three original mattresses and their green floral bedding, original pillows, yellow walls, dark floor and room geometry. Correct color cast and exposure, gently lift shadows, tidy and smooth existing sheets and arrange the existing towels. Clean minor marks and reduce noise without changing materials. Do not add furniture, bed frames, art, windows or amenities. Faithful, modest, photorealistic hospitality photo."
+    },
+    {
+      "name": "beach-palms-1",
+      "source": "Pictures/b2.jpg",
+      "output": "assets/beach-palms-1.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the coconut palms, cottages, flags, sand and hills exactly as photographed. Recover washed-out sand and natural sky color; avoid oversaturation. Remove small scattered litter, not vegetation or fixtures."
+    },
+    {
+      "name": "beach-palms-2",
+      "source": "Pictures/b3.jpg",
+      "output": "assets/beach-palms-2.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep all palms, huts, flags, shoreline and hillside exactly as photographed. Recover sand highlights and lift the dark huts gently; natural tropical daylight, no new features."
+    },
+    {
+      "name": "resort-sign",
+      "source": "Pictures/b4.jpg",
+      "output": "assets/resort-sign.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the sign with its ORIGINAL lettering and design exactly, including I LOVE YOLLY BEACH RESORT LANCA. Do not rewrite, redraw or invent letters. Keep sign frame, palms, sea, sand and overhead lights; balance backlight, make the original sign clearer, clean small litter only."
+    },
+    {
+      "name": "cottage-2",
+      "source": "Pictures/c2.jpg",
+      "output": "assets/cottage-2.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the single red wooden cottage, existing table and seating, original roof and tarpaulin, palms and actual ground. Remove the photographer's shadow and tiny litter only; no new furniture or landscaping."
+    },
+    {
+      "name": "cottage-3",
+      "source": "Pictures/c3.jpg",
+      "output": "assets/cottage-3.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve this cottage, posts, roof, hammock, rocky ground and trees. Clean scattered litter, balance the deep shade and bright foreground; do not smooth rocks into beach sand or redesign anything."
+    },
+    {
+      "name": "cottage-4",
+      "source": "Pictures/c4.jpg",
+      "output": "assets/cottage-4.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the open red cottage, original seating, hammock, coconut trees and rocky retaining edge. Improve exposure and color. Remove loose litter only, keeping real terrain and materials."
+    },
+    {
+      "name": "bathroom-shared",
+      "source": "Pictures/cr4.jpg",
+      "output": "assets/bathroom-shared.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the shared bathroom building, the accessibility ramp, handrail, doors, palms and the exact ORIGINAL words PWD, BABAE, LALAKE. Clean the floor and superficial wall marks; remove loose trash and plastic bottles at right and the loose bucket in front. Do not change the structure, signs or accessibility facilities."
+    },
+    {
+      "name": "rooms12-exterior",
+      "source": "Pictures/r3.jpg",
+      "output": "assets/rooms12-exterior.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep this wide bamboo-fronted accommodation building, timber posts, doors, windows, roof, chairs and porch unchanged. Balance sunlight and shade, clean the porch and remove minor loose clutter. Do not replace bamboo walls or repaint."
+    },
+    {
+      "name": "rooms12-porch",
+      "source": "Pictures/r4.jpg",
+      "output": "assets/rooms12-porch.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the bamboo wall pattern, original doorway, furniture, porch and perspective exactly. Remove loose papers and bottles, clean surface marks, balance highlights and shade; no new furnishings or redesign."
+    },
+    {
+      "name": "room3-porch",
+      "source": "Pictures/ra1.jpg",
+      "output": "assets/room3-porch.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the close-up bamboo bench, red railing, existing plastic chairs, table, door and kitchen area. Remove loose broom/clutter, clean surfaces and lift dark areas. Do not add decor or change any furniture."
+    },
+    {
+      "name": "room3-beach-view",
+      "source": "Pictures/ra2.jpg",
+      "output": "assets/room3-beach-view.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the shaded porch, railing, existing wooden table, barbecue stand, coconut palms and sea exactly in place. Recover the bright sea and sandy highlights, lift porch shadows, remove tiny litter only. No new facilities or artificial scenery."
+    },
+    {
+      "name": "room3-exterior",
+      "source": "Pictures/ra3.jpg",
+      "output": "assets/room3-exterior.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the exact porch, facade, corrugated roof, blue tarpaulin, timber railings, doors and existing furniture. Clean small surface marks and ground litter; improve exposure and color while preserving rustic construction."
+    },
+    {
+      "name": "room3-kitchen",
+      "source": "Pictures/ra4.jpg",
+      "output": "assets/room3-kitchen.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the actual small kitchen, existing stove, sink, faucet, green cabinets, tiled backsplash and bathroom beyond the blue door. Tidy loose cloth and clean surfaces, correct light and color. Do not add appliances, storage, equipment or remodel the kitchen or toilet."
+    },
+    {
+      "name": "beach-hero",
+      "source": "Pictures/rh1.jpg",
+      "output": "assets/beach-hero.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the real ocean, shore, palms, overhead beam, railing, lights, flags, and table in the exact composition. Balance bright sea against shaded porch, recover sky highlights, reduce haze gently and bring out natural blue-green water. Preserve natural brightness and true beach conditions; no invented sunset or cleared/new coastline."
+    },
+    {
+      "name": "resthouse-dining",
+      "source": "Pictures/rh2.jpg",
+      "output": "assets/resthouse-dining.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve this rustic bamboo dining room, original green table cover, table, benches, plastic chair, woven food cover, timber and sea glimpses. Remove the broom from the bench, tidy cover, clean superficial marks and balance natural light. No new furnishings or renovation."
+    },
+    {
+      "name": "resthouse-exterior",
+      "source": "Pictures/rh4.jpg",
+      "output": "assets/resthouse-exterior.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Keep the actual two-level rest house, balcony, roof, railings, original colors, palms and surrounding vegetation. Correct exposure and color, clear small loose litter and clean superficial surface marks. Do not add AC, bathrooms or change construction."
+    },
+    {
+      "name": "rooms45-alternate-clean",
+      "source": "assets/rooms-45-alternate.jpg",
+      "output": "assets/rooms45-alternate-clean.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve both original beds, green bedding, mirror, dark curtains, yellow walls, AC, doorway and floor. Remove ceiling-light flare and any photographer reflection; smooth existing sheets, tidy existing towels and clean small marks. Do not add beds, furnishings or amenities."
+    },
+    {
+      "name": "rooms45-bathroom-clean",
+      "source": "assets/rooms-45-bathroom.jpg",
+      "output": "assets/rooms45-bathroom-clean.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the original toilet, shower, blue door, gray wall tiles, floor and all taps. Clean superficial tile/floor marks, balance white light and make the existing bucket and dipper clean and neatly placed. Do not remove essential fixtures or add any facility."
+    },
+    {
+      "name": "rooms45-exterior-clean",
+      "source": "assets/rooms-45-exterior.jpg",
+      "output": "assets/rooms45-exterior-clean.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photograph. The supplied image is the only edit target. Produce a natural, clean hospitality listing photo of THIS EXACT beach resort. Preserve source aspect ratio, framing, viewpoint, all structures, materials, paint colors, furniture, fixtures, room dimensions and actual amenities. Correct exposure and white balance, recover highlights and shadow detail, straighten only subtle camera tilt, reduce noise and sharpen naturally. Clean small surface marks and scattered litter. No added furniture, plants, bed frames, facilities, buildings, luxuries, fake views or changes to the shoreline. No text overlays or watermarks. Keep the property recognizable and honest. Preserve the two green room facades, blue doors, red porch railings, actual roof, fan, chairs and palms. Correct the heavy blue cast to natural daylight, clean porch and loose litter including sacks visible at the side, tidy existing mats. Do not repaint, remodel or add features."
     }
   ]
 }

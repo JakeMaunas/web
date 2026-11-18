@@ -11,4 +11,5 @@ const server = http.createServer((req,res)=>{
   if(!file.startsWith(root+path.sep)){res.writeHead(403);res.end('Forbidden');return;}
   fs.readFile(file,(error,data)=>{if(error){res.writeHead(404);res.end('Not found');return;}res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache'});res.end(data);});
 });
-server.listen(4174,'127.0.0.1',()=>console.log('Yolly Beach preview: http://127.0.0.1:4174'));
+const port = Number(process.env.PORT) || 4174;
+server.listen(port,'127.0.0.1',()=>console.log(`Yolly Beach preview: http://127.0.0.1:${port}`));
