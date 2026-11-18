@@ -1,0 +1,47 @@
+{
+  "note": "Originals retained. Edits adjust exposure, tidy surfaces and remove clutter while preserving property layout and amenities.",
+  "edits": [
+    {
+      "name": "kitchen",
+      "source": "Pictures/k.jpg",
+      "output": "assets/kitchen.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: supplied image only. Remove all sacks including the stack at right, blue and red tarpaulins, loose broom/sticks, loose cable on the floor, debris and construction clutter. Clean the concrete floor, sinks, countertops and grill without changing any architecture, material, faucets or cooking facilities. Keep the honest rustic outdoor kitchen, with the identical composition and simple gray concrete finish. Lift shadows, balance daylight, crisp realistic hospitality photo. Do not add appliances, furnishings, plants or decorations."
+    },
+    {
+      "name": "cottage",
+      "source": "Pictures/c1.jpg",
+      "output": "assets/cottage.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: supplied image only. Enhance this exact resort cottage photo for a website. Keep the identical two red timber open cottages, thatched roofs, hammocks, coconut trees, stone retaining wall, nearby building and composition. Correct exposure so sand is not blown out, recover natural color, sharpen gently, remove small scattered litter and buckets at far left. Clean and appealing but authentic; no new structures, no luxury redesign, no added furniture."
+    },
+    {
+      "name": "rooms-45",
+      "source": "C:/Users/jake2/Downloads/9a2824d4-c64e-4d67-8130-c2c234f259db.jpg",
+      "output": "assets/rooms-45.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: supplied image only. Enhance this exact bedroom photo for a beach resort listing. Preserve the same two beds, original mint patterned sheets, pillows, yellow walls, brown wood-look tile floor, blue bathroom door and original AC. Remove light flare and heavy color cast, balance light, clean and straighten perspective subtly, neatly smooth existing sheets and arrange existing towels. Do not add beds, furniture, art, amenities or windows. Realistic, inviting, modest accommodation."
+    },
+    {
+      "name": "rooms-12",
+      "source": "Pictures/r2.jpg",
+      "output": "assets/rooms-12.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: supplied image only. Enhance this exact resort room listing photo. Preserve the original turquoise walls, dark metal bunk beds at left, wooden bed at right, original bedding, bathroom door and AC. Balance the lighting, lift shadows, correct color cast and perspective, clean walls and floor surface marks and make original bedding neat. No new furniture, beds, windows or luxury remodeling. Photorealistic, faithful modest accommodation."
+    },
+    {
+      "name": "rest-house",
+      "source": "Pictures/rh3.jpg",
+      "output": "assets/rest-house.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: supplied image only. Enhance this exact rest house bedroom photo for a resort listing. Preserve the same floor mattress, floral sheets, yellow walls, green floral curtains, pillows, electric fan and windows. Balance window exposure and lift shadows, tidy and smooth existing bedding and pillows, clean surface marks while keeping original materials and furnishings. No new beds or furniture, no added amenities or luxury remodeling. Realistic hospitality photo."
+    },
+    {
+      "name": "room-3",
+      "source": "Pictures/ra5.jpg",
+      "output": "assets/room-3.jpg",
+      "tool": "built-in image_gen",
+      "prompt": "Use-case: edit existing property photo. Edit target: the supplied Room 3 photo only. Enhance this exact simple beach resort sleeping area for a website listing. Preserve all three original mattresses and their green floral bedding, original pillows, yellow walls, dark floor and room geometry. Correct color cast and exposure, gently lift shadows, tidy and smooth existing sheets and arrange the existing towels. Clean minor marks and reduce noise without changing materials. Do not add furniture, bed frames, art, windows or amenities. Faithful, modest, photorealistic hospitality photo."
+    }
+  ]
+}

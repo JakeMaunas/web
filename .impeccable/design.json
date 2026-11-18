@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T22:51:16.6813051+08:00",
+  "title": "Design System: Yolly Beach Resort",
+  "extensions": {
+    "colorMeta": {
+      "green": { "role": "primary", "displayName": "Palm green" },
+      "green-dark": { "role": "primary", "displayName": "Deep palm" },
+      "sand": { "role": "neutral", "displayName": "Sand" },
+      "white": { "role": "neutral", "displayName": "Warm paper" },
+      "ink": { "role": "neutral", "displayName": "Forest ink" },
+      "muted": { "role": "neutral", "displayName": "Quiet olive" },
+      "line": { "role": "neutral", "displayName": "Soft seam" },
+      "sage": { "role": "neutral", "displayName": "Pale sage" },
+      "focus": { "role": "accent", "displayName": "Warm ochre focus" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Hero display", "purpose": "Large photographic hero headline; phone typography adapts in CSS." },
+      "headline": { "displayName": "Section headline", "purpose": "Regular serif headings with occasional italic emphasis." },
+      "body": { "displayName": "Body", "purpose": "Clear prose with a maximum paragraph measure of 66ch." },
+      "button": { "displayName": "Action", "purpose": "Primary and cream button text." }
+    },
+    "shadows": [
+      { "name": "mobile-menu", "value": "0 15px 20px #132d2415", "purpose": "Separate the expanded menu from content below." },
+      { "name": "mobile-booking-bar", "value": "0 -4px 18px #132d2410", "purpose": "Separate fixed bottom actions from scrolling content." },
+      { "name": "mobile-gallery-arrow", "value": "0 3px 12px #173e3520", "purpose": "Keep arrows distinct over photographs." }
+    ],
+    "motion": [
+      { "name": "button-state", "value": "background .2s, color .2s", "purpose": "Button color changes." },
+      { "name": "room-photo", "value": "transform .45s cubic-bezier(.16,1,.3,1)", "purpose": "Scale photos to 1.025 on hover-capable devices." },
+      { "name": "hero-arrival", "value": "arrive .8s cubic-bezier(.16,1,.3,1)", "purpose": "Translate copy from 15px below and settle a 3px blur to zero." },
+      { "name": "reduced-motion", "value": "animation:none!important; transition:none!important; scroll-behavior:auto", "purpose": "Respect prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "narrow-phone-max", "value": "360px" },
+      { "name": "phone-max", "value": "560px" },
+      { "name": "tablet-max", "value": "800px" },
+      { "name": "compact-desktop-max", "value": "1100px" },
+      { "name": "wide-desktop-min", "value": "1600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Palm action for enquiry and booking links.",
+      "html": "<button class=\"ds-primary\">Enquire about your stay <svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:25px;min-height:50px;padding:14px 24px;background:var(--green,#173e35);color:var(--sand,#f7f4ed);border:0;border-radius:5px;font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:14px;font-weight:550;line-height:1.5;cursor:pointer;transition:background .2s,color .2s}.ds-primary svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.ds-primary:hover{background:var(--green-dark,#102e27)}.ds-primary:focus-visible{outline:3px solid #9e6d35;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Active Accommodation Filter",
+      "kind": "chip",
+      "refersTo": "filter-active",
+      "description": "Pressed filter state for the accommodation list.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"true\">All stays</button>",
+      "css": ".ds-filter{padding:9px 18px;min-height:44px;border:1px solid var(--green,#173e35);border-radius:30px;background:var(--green,#173e35);color:var(--sand,#f7f4ed);font-family:var(--sans,'DM Sans',Arial,sans-serif);font-size:13px;cursor:pointer}.ds-filter:hover{border-color:var(--green,#173e35)}.ds-filter:focus-visible{outline:3px solid #9e6d35;outline-offset:5px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Coastal guestbook",
+    "overview": "Warm paper, deep palm green, editorial serif headings and real property photography establish a relaxed, welcoming resort identity. Comfortable spacing gives photographs room while rates, capacities and enquiry controls remain easy to scan. Documentation was extracted from implemented CSS. Mobbin required a paid plan; the Impeccable context/concept engine was unavailable. No generated concept image or screenshot is claimed as evidence.",
+    "keyCharacteristics": ["Actual property photographs", "Flat sections with gentle corners", "Serif headings and clear sans-serif information"],
+    "rules": [{ "name": "The Photo First Rule", "body": "Keep visual emphasis on the real property and useful information; use the restrained palette around photographs.", "section": "colors" }],
+    "dos": ["Do reuse the extracted palette, serif/sans pairing and corner language.", "Do preserve visible focus, readable phone inputs and safe-area spacing.", "Do keep room prices and capacities legible when layouts collapse."],
+    "donts": ["Don't fabricate reviews, amenities or availability.", "Don't add raised containers around every content group.", "Don't claim unavailable research or generated visual concepts as completed evidence."]
+  }
+}
