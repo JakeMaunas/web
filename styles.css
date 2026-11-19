@@ -10,3 +10,6 @@
 @media(max-width:560px){.cottage-rates p{white-space:nowrap}.cottage-rates small{display:block;font-size:11px;line-height:1.6}}
 .features{font-size:12px}
 @media(max-width:560px){.features{font-size:12px;gap:9px 14px}.room-note,.cottage-copy .cottage-small{font-size:12px}}
+.hero-content p{max-width:52ch}
+@media(max-width:560px){.hero{height:680px}.hero-content{padding-top:64px}.hero-content p{max-width:34ch}}
+@media(max-width:360px){.hero{height:740px}}
