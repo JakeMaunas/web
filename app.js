@@ -224,6 +224,7 @@ document.querySelector('#inquiry-form').addEventListener('submit', event => {
   const displayDate = date.toLocaleDateString('en-PH', { month: 'long', day: 'numeric', year: 'numeric' });
   inquiryMessage = `Hello Yolly Beach Resort! I would like to ask about ${stay.name} for ${guestsInput.value} guests on ${displayDate} (${stay.period}). I saw the listed rate of ₱${stay.price.toLocaleString('en-PH')}. Could you please confirm availability, the total including applicable entrance fees, and the booking arrangements? Thank you!`;
   document.querySelector('#inquiry-message').textContent = inquiryMessage;
+  document.querySelector('#messenger-link').href = `https://m.me/100063563602062?text=${encodeURIComponent(inquiryMessage)}`;
   document.querySelector('#sms-link').href = `sms:+639633168453?body=${encodeURIComponent(inquiryMessage)}`;
   document.querySelector('#copy-status').textContent = '';
   const result = document.querySelector('#inquiry-result');
@@ -234,9 +235,9 @@ document.querySelector('#inquiry-form').addEventListener('submit', event => {
 document.querySelector('#copy-inquiry').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(inquiryMessage);
-    document.querySelector('#copy-status').textContent = 'Copied. You can paste this into a message to us.';
+    document.querySelector('#copy-status').textContent = 'Copied. Paste this into Messenger or your text message if it is not already filled in.';
   } catch {
-    document.querySelector('#copy-status').textContent = 'Please select and copy the enquiry text above, then paste it into your message.';
+    document.querySelector('#copy-status').textContent = 'Please select and copy the enquiry text above, then paste it into Messenger or your text message.';
   }
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
